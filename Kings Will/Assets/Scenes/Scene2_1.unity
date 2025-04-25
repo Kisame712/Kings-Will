@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1581483747f9aa84da576a2ba190a96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInScreenTime: 0
+  fadeInScreenTime: 1
   fadeInScreen: {fileID: 446768966}
   textBox: {fileID: 464161051}
   textArea: {fileID: 1790527213}

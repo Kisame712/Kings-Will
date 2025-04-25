@@ -52,7 +52,7 @@ public class Scene1 : MonoBehaviour
         charKingJames.SetActive(true);
         yield return new WaitForSeconds(2);
         textBox.SetActive(true);
-        string sentence = "I have an important announcement to make. I have been diagnosed with a fatal illness and have only a few days left.";
+        string sentence = "I have an important announcement to make. I have been diagnosed with a fatal illness and I only have a few days left.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;

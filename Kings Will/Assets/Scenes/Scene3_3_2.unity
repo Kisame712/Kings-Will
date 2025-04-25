@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 99834894}
   - component: {fileID: 99834893}
   m_Layer: 5
-  m_Name: King James
+  m_Name: Princess Anna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9f8a7db0eb055914aa2c94e74e7ac1a9, type: 3}
+  m_Texture: {fileID: 2800000, guid: 5d2151caa765a4645a3830952b4806e4, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -216,6 +216,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99834891}
   m_CullTransparentMesh: 1
+--- !u!1 &371527784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371527786}
+  - component: {fileID: 371527785}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &371527785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371527784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfeae3ea0dbd94e4898be1438a34a3ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInScreenTime: 1
+  fadeInScreen: {fileID: 2080309114}
+  textBox: {fileID: 948880070}
+  textArea: {fileID: 1731405857}
+  continueButton: {fileID: 996664423}
+  charName: {fileID: 1260732253}
+  charPrincessAnna: {fileID: 99834891}
+  typeSpeed: 0.01
+--- !u!4 &371527786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371527784}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &420068167
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: b4be6312e78f2c3448cea88645523cc6, type: 3}
+  m_Texture: {fileID: 2800000, guid: 0818a4ba6adbc5b48b0a234088f8f54e, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -775,8 +827,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene3_3_1, Assembly-CSharp
+      - m_Target: {fileID: 371527785}
+        m_TargetAssemblyTypeName: Scene3_3_2, Assembly-CSharp
         m_MethodName: ContinueButton
         m_Mode: 1
         m_Arguments:
@@ -1435,3 +1487,4 @@ SceneRoots:
   - {fileID: 2132475029}
   - {fileID: 450410314}
   - {fileID: 876014486}
+  - {fileID: 371527786}

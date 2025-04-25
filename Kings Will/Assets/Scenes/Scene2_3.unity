@@ -972,7 +972,7 @@ MonoBehaviour:
   choicePanel1_1: {fileID: 1609260971}
   charGeneralRich: {fileID: 1991689629}
   charPrinceCarl: {fileID: 1023938335}
-  typeSpeed: 0.02
+  typeSpeed: 0.01
 --- !u!1 &1023938335
 GameObject:
   m_ObjectHideFlags: 0

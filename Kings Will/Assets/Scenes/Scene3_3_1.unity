@@ -173,7 +173,7 @@ MonoBehaviour:
   continueButton: {fileID: 1150230127}
   charName: {fileID: 625087929}
   charKingJames: {fileID: 1312852792}
-  typeSpeed: 0.02
+  typeSpeed: 0.01
 --- !u!1 &371714529
 GameObject:
   m_ObjectHideFlags: 0

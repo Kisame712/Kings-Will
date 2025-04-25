@@ -2076,7 +2076,7 @@ MonoBehaviour:
   charPrinceLuke: {fileID: 1935576297}
   charGeneralRich: {fileID: 2029249537}
   charPrincessAnna: {fileID: 2027466270}
-  typeSpeed: 0.02
+  typeSpeed: 0.01
 --- !u!1 &1935576297
 GameObject:
   m_ObjectHideFlags: 0

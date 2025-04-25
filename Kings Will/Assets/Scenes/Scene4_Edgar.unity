@@ -231,7 +231,7 @@ MonoBehaviour:
   charPrinceCarl: {fileID: 185810208}
   charPrincessAnna: {fileID: 211491471}
   charPrincessSophie: {fileID: 1383904545}
-  typeSpeed: 0.02
+  typeSpeed: 0.01
 --- !u!4 &164558285
 Transform:
   m_ObjectHideFlags: 0
@@ -1746,7 +1746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1901688097
 RectTransform:
   m_ObjectHideFlags: 0

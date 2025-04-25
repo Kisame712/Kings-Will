@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Scene3_2_1 : MonoBehaviour
+public class Scene3_2_2 : MonoBehaviour
 {
     [SerializeField] float fadeInScreenTime;
 
@@ -16,8 +16,7 @@ public class Scene3_2_1 : MonoBehaviour
     public TMP_Text charName;
 
     [Header("Scene Characters")]
-    public GameObject charPrinceCarl;
-    public GameObject charGeneralRich;
+    public GameObject charPrincessSophie;
 
     [Header("Miscellaneuos")]
     public float typeSpeed;
@@ -45,13 +44,13 @@ public class Scene3_2_1 : MonoBehaviour
     {
         // eventCount 0
         yield return new WaitForSeconds(fadeInScreenTime);
-        charName.text = "Prince Carl";
+        charName.text = "Princess Sophie";
         textArea.text = "";
         fadeInScreen.SetActive(false);
-        charPrinceCarl.SetActive(true);
+        charPrincessSophie.SetActive(true);
         yield return new WaitForSeconds(2);
         textBox.SetActive(true);
-        string sentence = "Edgar.. I bet you have a good chance to become the next king";
+        string sentence = "Brother Edgar! I just talked to Brother Luke about the will. I have no interest in the throne. I would be relieved if everything is solved without any bloodshed.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -63,10 +62,10 @@ public class Scene3_2_1 : MonoBehaviour
     {
         // eventCount 1
         continueButton.SetActive(false);
-        charPrinceCarl.SetActive(false);
+        charPrincessSophie.SetActive(false);
         charName.text = "Prince Edgar";
         textArea.text = "";
-        string sentence = "I think I have squashed Anna's chances at least.";
+        string sentence = "I met Sister Anna. She had the tendencies of a tyrant. I would rather not be under her rule.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -76,14 +75,14 @@ public class Scene3_2_1 : MonoBehaviour
     IEnumerator EventThree()
     {
         // eventCount 2
-        charName.text = "Prince Carl";
+        charName.text = "Princess Sophie";
         textArea.text = "";
         textBox.SetActive(false);
-        charPrinceCarl.SetActive(true);
+        charPrincessSophie.SetActive(true);
         continueButton.SetActive(false);
         yield return new WaitForSeconds(2);
         textBox.SetActive(true);
-        string sentence = "Ahh, that's good! You know how she fakes her nice behaviour in front of the king.";
+        string sentence = "Yes! Certainly. Only you and Brother Luke understand my desires. I don't have any interest in royal traditions, power or money.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -93,11 +92,11 @@ public class Scene3_2_1 : MonoBehaviour
     IEnumerator EventFour()
     {
         // eventCount 3
-        charPrinceCarl.SetActive(false);
+        charPrincessSophie.SetActive(false);
         charName.text = "Prince Edgar";
         textArea.text = "";
         continueButton.SetActive(false);
-        string sentence = "Yes I do. I have seen it first hand. Forgive my rudeness, but it is not likely you become the next king Brother Carl.";
+        string sentence = "I know Sophie. I want to ensure a peaceful future for all of us. If I become the king, I would fulfil all your wishes as I know you don't have that many to begin with.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -109,7 +108,7 @@ public class Scene3_2_1 : MonoBehaviour
         // eventCount 4
         textArea.text = "";
         continueButton.SetActive(false);
-        string sentence = "It is most likely gonna be Brother Luke or me.";
+        string sentence = "It all comes down to faher's decision in the end. If only there was a way to persuade him..";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -121,13 +120,13 @@ public class Scene3_2_1 : MonoBehaviour
     {
         // eventCount 5
         continueButton.SetActive(false);
-        charName.text = "General Rich";
+        charName.text = "Princess Sophie";
         textArea.text = "";
         textBox.SetActive(false);
-        charGeneralRich.SetActive(true);
+        charPrincessSophie.SetActive(true);
         yield return new WaitForSeconds(2);
         textBox.SetActive(true);
-        string sentence = "It is still better than Anna getting the throne. I am content with being the general.";
+        string sentence = "I know! I will write him a letter tonight. I will convey all our concerns and wishes. It is for the best.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -138,14 +137,10 @@ public class Scene3_2_1 : MonoBehaviour
     {
         // eventCount 6
         continueButton.SetActive(false);
-        charGeneralRich.SetActive(false);
-        charName.text = "Prince Carl";
+        charPrincessSophie.SetActive(false);
+        charName.text = "Prince Edgar";
         textArea.text = "";
-        textBox.SetActive(false);
-        charPrinceCarl.SetActive(true);
-        yield return new WaitForSeconds(2);
-        textBox.SetActive(true);
-        string sentence = "I don't like Luke. Edgar, while I do have some concerns but I will concede. You are the king's own son.";
+        string sentence = "... I don't know if it will be effective. How was your conversation with Brother Luke?";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -158,7 +153,7 @@ public class Scene3_2_1 : MonoBehaviour
         // eventCount 7
         textArea.text = "";
         continueButton.SetActive(false);
-        string sentence = "Whatever happens, happens. I won't waste my time overthinking it. I shall take my leave.";
+        string sentence = "Does he desire the throne? Has he gone back to seclusion just like when mother died?";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -168,9 +163,14 @@ public class Scene3_2_1 : MonoBehaviour
     IEnumerator EventNine()
     {
         // eventCount 8
-        textArea.text = "";
         continueButton.SetActive(false);
-        string sentence = "(Leaves)";
+        charName.text = "Princess Sophie";
+        textArea.text = "";
+        charPrincessSophie.SetActive(true);
+        textBox.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        textBox.SetActive(true);
+        string sentence = "He is certainly moved. But he seemed conflicted. He too wants to resolve everything peacefully and is willing to give up his privelage of being the eldest.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -180,15 +180,11 @@ public class Scene3_2_1 : MonoBehaviour
     IEnumerator EventTen()
     {
         // eventCount 9
+        charPrincessSophie.SetActive(false);
         continueButton.SetActive(false);
-        charPrinceCarl.SetActive(false);
-        charName.text = "General Rich";
+        charName.text = "Prince Edgar";
         textArea.text = "";
-        textBox.SetActive(false);
-        charGeneralRich.SetActive(true);
-        yield return new WaitForSeconds(2);
-        textBox.SetActive(true);
-        string sentence = "There is nothing much to say from my side. I will pray for your success.";
+        string sentence = "I see. I shall stop overthinking too then. Sophie you should also go to bed. We can only wait for father's decision tomorrow.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -198,11 +194,14 @@ public class Scene3_2_1 : MonoBehaviour
     IEnumerator EventEleven()
     {
         // eventCount 10
-        charGeneralRich.SetActive(false);
         continueButton.SetActive(false);
-        charName.text = "Prince Edgar";
+        charName.text = "Princess Sophie";
         textArea.text = "";
-        string sentence = "Thank you uncle! I hope you will watch over us in absence of father.";
+        textBox.SetActive(false);
+        charPrincessSophie.SetActive(true);
+        yield return new WaitForSeconds(2);
+        textBox.SetActive(true);
+        string sentence = "I have made my decision Brother Edgar. I will ask father to consider you as a candidate. I am sure you will take wise decisions in the future.";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -212,14 +211,11 @@ public class Scene3_2_1 : MonoBehaviour
     IEnumerator EventTwelve()
     {
         // eventCount 11
+        charPrincessSophie.SetActive(false);
         continueButton.SetActive(false);
-        charName.text = "General Rich";
+        charName.text = "Prince Edgar";
         textArea.text = "";
-        textBox.SetActive(false);
-        charGeneralRich.SetActive(true);
-        yield return new WaitForSeconds(2);
-        textBox.SetActive(true);
-        string sentence = "Hahaha.. you sure have a way with those words. Go on then. Hope to see you at the courtyard tomorrow.";
+        string sentence = "I am glad you think so highly of me! I shall leave you to it then. Good night Sophie";
         StartCoroutine(Type(sentence));
         yield return new WaitUntil(() => currText == sentence);
         eventCount++;
@@ -229,7 +225,7 @@ public class Scene3_2_1 : MonoBehaviour
     IEnumerator EventThirteen()
     {
         //eventCount 12
-        charGeneralRich.SetActive(false);
+        charPrincessSophie.SetActive(false);
         continueButton.SetActive(false);
         charName.text = "Prince Edgar";
         textArea.text = "";

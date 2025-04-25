@@ -1397,7 +1397,7 @@ MonoBehaviour:
   charName: {fileID: 15327412}
   charPrinceCarl: {fileID: 487985630}
   charGeneralRich: {fileID: 1871946931}
-  typeSpeed: 0.02
+  typeSpeed: 0.01
 --- !u!4 &1757629782
 Transform:
   m_ObjectHideFlags: 0

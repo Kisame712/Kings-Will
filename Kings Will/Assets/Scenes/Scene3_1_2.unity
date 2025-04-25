@@ -1184,7 +1184,7 @@ MonoBehaviour:
   charName: {fileID: 15327412}
   charPrinceCarl: {fileID: 1871946931}
   charGeneralRich: {fileID: 1166683331}
-  typeSpeed: 0.02
+  typeSpeed: 0.01
 --- !u!1 &1166683331
 GameObject:
   m_ObjectHideFlags: 0

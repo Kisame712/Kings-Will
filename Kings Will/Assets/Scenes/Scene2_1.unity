@@ -2006,7 +2006,7 @@ MonoBehaviour:
   choicePanel2_1: {fileID: 1757349813}
   charPrinceLuke: {fileID: 945805458}
   charPrincessSophie: {fileID: 81500018}
-  typeSpeed: 0.02
+  typeSpeed: 0.01
 --- !u!1 &1757349813
 GameObject:
   m_ObjectHideFlags: 0

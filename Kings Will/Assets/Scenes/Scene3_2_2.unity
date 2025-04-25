@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 77042311}
   - component: {fileID: 77042310}
   m_Layer: 5
-  m_Name: King James
+  m_Name: Princess Sophie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9f8a7db0eb055914aa2c94e74e7ac1a9, type: 3}
+  m_Texture: {fileID: 2800000, guid: 2a4a8f28f44ec0e4bbb4d7fe0ed7fcc1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -450,8 +450,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene3_3_1, Assembly-CSharp
+      - m_Target: {fileID: 1784559507}
+        m_TargetAssemblyTypeName: Scene3_2_2, Assembly-CSharp
         m_MethodName: ContinueButton
         m_Mode: 1
         m_Arguments:
@@ -1255,6 +1255,58 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b50b74cd1bc84f4a8796710fa415fbf, type: 3}
+--- !u!1 &1784559505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784559506}
+  - component: {fileID: 1784559507}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1784559506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784559505}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1784559507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784559505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4281e01813b40a2418c37d1f7bb79ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInScreenTime: 1
+  fadeInScreen: {fileID: 726847172}
+  textBox: {fileID: 1846055597}
+  textArea: {fileID: 1130202870}
+  continueButton: {fileID: 555247247}
+  charName: {fileID: 773906457}
+  charPrincessSophie: {fileID: 77042308}
+  typeSpeed: 0.01
 --- !u!1 &1846055597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,3 +1487,4 @@ SceneRoots:
   - {fileID: 867664241}
   - {fileID: 272083452}
   - {fileID: 1503846318}
+  - {fileID: 1784559506}

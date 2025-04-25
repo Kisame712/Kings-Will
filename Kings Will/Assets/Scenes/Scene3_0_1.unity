@@ -1126,7 +1126,7 @@ MonoBehaviour:
   continueButton: {fileID: 996664423}
   charName: {fileID: 1260732253}
   charPrincessAnna: {fileID: 99834891}
-  typeSpeed: 0.02
+  typeSpeed: 0.01
 --- !u!4 &1431170715
 Transform:
   m_ObjectHideFlags: 0

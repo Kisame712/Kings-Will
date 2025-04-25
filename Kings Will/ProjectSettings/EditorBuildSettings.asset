@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene3_3_2.unity
     guid: 3ee2a51a13246954588961eb2ec93c09
+  - enabled: 1
+    path: Assets/Scenes/Scene4_Edgar.unity
+    guid: 81f0d354a02223344a8d57fefd5a2c89
+  - enabled: 1
+    path: Assets/Scenes/Scene4_Luke.unity
+    guid: 6301cfdb839cc074899c43b2e3c06eee
   m_configObjects: {}
